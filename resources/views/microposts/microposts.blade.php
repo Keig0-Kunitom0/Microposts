@@ -13,6 +13,8 @@
                     <div>
                         {{-- 投稿内容 --}}
                         <p class="mb-0">{!! nl2br(e($micropost->content)) !!}</p>
+                         {{-- お気に入り／お気に入り解除ボタン --}}
+                         @include('microposts_favorite.favorite_button')
                     </div>
                     <div>
                         @if (Auth::id() == $micropost->user_id)
