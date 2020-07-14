@@ -11,8 +11,7 @@
             @include('users.navtabs')
             {{-- お気に入り一覧 --}}
             @include('users.favorites')
-            {{-- お気に入り／お気に入り解除ボタン --}}
-            @include('microposts_favorite.favorite_button')
+           
         </div>
     </div>
 @endsection

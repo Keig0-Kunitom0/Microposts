@@ -100,7 +100,7 @@ class UsersController extends Controller
         // お気に入り一覧ビューでそれを表示
         return view('users.favorite_microposts', [
             'user' => $user,
-            'favorites' => $favorites,
+            'microposts' => $favorites,
         ]);
      }
 }
